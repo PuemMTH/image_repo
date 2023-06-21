@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+use App\Http\Controllers\ImageController;
+
+// save image
+Route::post('image/save', [ImageController::class, 'save']);
+Route::get('image/get/{id}', [ImageController::class, 'get']);

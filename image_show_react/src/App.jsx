@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<ShowImage />} />
+        <Route path="/show_image/:id" element={<ShowImage />} />
         <Route path="/save_image" element={<SaveImage />} />
       </Routes>
     </Router>
