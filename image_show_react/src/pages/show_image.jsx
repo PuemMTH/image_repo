@@ -23,7 +23,6 @@ export default function show_image() {
       });
   };
 
-
   useEffect(() => {
     getImage(id_image.id);
   }, [id_image]);
